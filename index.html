@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Router Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Audio Router</h1>
+
+        <div class="mode-selector">
+            <label for="moduleCount">Select Number of Active Modules:</label>
+            <select id="moduleCount">
+                <option value="1">1 Earphone / Output</option>
+                <option value="2" selected>2 Earphones / Dual Channel</option>
+            </select>
+        </div>
+
+        <div class="channel-card" id="card1">
+            <h3>Earphones 1</h3>
+            <div class="control-group">
+                <label for="dev1Select">Device:</label>
+                <select id="dev1Select"></select>
+            </div>
+            <div class="control-group">
+                <label for="file1Input">Track File Path:</label>
+                <input type="text" id="file1Input" value="watermello-free-music-477137.mp3">
+            </div>
+        </div>
+
+        <div class="channel-card" id="card2">
+            <h3>Earphones 2</h3>
+            <div class="control-group">
+                <label for="dev2Select">Device:</label>
+                <select id="dev2Select"></select>
+            </div>
+            <div class="control-group">
+                <label for="file2Input">Track File Path:</label>
+                <input type="text" id="file2Input" value="memphis-trap-memphis-trap-wav-349366.mp3">
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <button id="playBtn" class="btn-play">Play Both Simultaneously</button>
+            <button id="stopBtn" class="btn-stop">Stop All</button>
+        </div>
+
+        <p id="output"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

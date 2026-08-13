@@ -1,0 +1,142 @@
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --inner-card: #0f172a;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-color: #6366f1;
+    --accent-hover: #4f46e5;
+    --secondary-btn: #334155;
+    --secondary-hover: #475569;
+    --danger-color: #ef4444;
+    --danger-hover: #dc2626;
+    --border-color: #334155;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.container {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.mode-selector {
+    background-color: var(--inner-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.mode-selector label {
+    font-weight: 600;
+    color: var(--accent-color);
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+}
+
+.channel-card {
+    background-color: var(--inner-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.channel-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--accent-color);
+}
+
+.control-group {
+    margin-bottom: 0.75rem;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+select, input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+button {
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-play {
+    flex: 1;
+    background-color: var(--accent-color);
+}
+
+.btn-play:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn-stop {
+    flex: 1;
+    background-color: var(--danger-color);
+}
+
+.btn-stop:hover {
+    background-color: var(--danger-hover);
+}
+
+p {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-align: center;
+}
